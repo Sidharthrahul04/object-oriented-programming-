@@ -9,7 +9,7 @@ class Animal:
     def sleep(self):
         print(f"{self.name} sleeps")
 
-#parents
+#Parents
 class Predator(Animal): 
     def hunt(self):
         print("this animal hunts")
