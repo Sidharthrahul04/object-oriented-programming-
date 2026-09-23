@@ -1,6 +1,6 @@
 class Animal: #class
     n=0  #class variable
-    def __init__(self,name): #constructore
+    def __init__(self,name): #constructor
         self.name=name #instance variable
         self.is_alive=True
         Animal.n=Animal.n+1
@@ -21,5 +21,7 @@ dog.sound()
 print(dog.is_alive)
 cat=Cat("tommy")
 cat.sound()
-print(Animal.n)
+print(cat.n)
+print(dog.n)
+
     

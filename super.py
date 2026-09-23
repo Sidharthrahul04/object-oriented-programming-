@@ -1,4 +1,3 @@
-#grand parent
 class Animal:    
     def __init__(self,name):
         self.name=name
@@ -16,28 +15,29 @@ class Predator(Animal):
 
 class Prey(Animal):
     def flee(self):
-            print("this animal flees")
+            print(f"{self.name} animal flees")
 
 #children
 class Rabbit(Prey):  
-     pass
+    def __init__(self, name,color,age):
+        super().__init__(name)
+        self.colour=color
+        self.age=age
+
+    def flee(self):
+        print(f"{self.name} flees")
+        super().flee()
 
 class Hawk(Predator):
-     pass
+    def __init__(self, name,breed,is_alive):
+        super().__init__(name)
+        self.breed=breed
+        self.is_alive=is_alive
 
 class Fish (Prey,Predator):   #multiple inheritance
      pass
 
-rabbit=Rabbit("muhammad")
+rabbit=Rabbit("sugu","white",3)
 print(rabbit.name)
 rabbit.flee()
-rabbit.eat()
-rabbit.sleep()
-hawk=Hawk("sulaiman")
-hawk.sleep()
-hawk.hunt()
-fish=Fish("raghav")
-fish.hunt()
-fish.flee()
 
-    
