@@ -14,7 +14,7 @@ even = [num for num in numbers if num % 2 == 0]
 
 #combination
 result = [num ** 2 for num in numbers if num % 2 == 0]
-
+name="pappu"
 
 #string comprehention
 result = "".join([char.upper() for char in name])
